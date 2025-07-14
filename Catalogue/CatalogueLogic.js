@@ -73,3 +73,19 @@ MatsContainer.addEventListener("click", function (e) {
     }
   }
 });
+ContentContainer.addEventListener("click", function (e) {
+  console.log(e.target);
+  if (
+    e.target.classList.contains("Pametnik") ||
+    e.target.classList.contains("Pic")
+  ) {
+    let ImgName = getComputedStyle(e.target).backgroundImage;
+    ImgName = ImgName.replace(/"/g, "");
+    ImgName = ImgName.replace("(", "");
+    ImgName = ImgName.replace(")", "");
+    ImgName = ImgName.replace("url", "");
+    console.log(ImgName);
+    localStorage.setItem("Picture", `${ImgName}`);
+    window.location.href = "http://127.0.0.1:5500/Editor/Editor.html";
+  }
+});

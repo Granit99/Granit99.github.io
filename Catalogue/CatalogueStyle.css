@@ -172,6 +172,8 @@ html {
 #ContentContainer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-  margin: 5px;
+  gap: 5em;
+  height: 100vh;
+  width: 100vw;
+  margin: 3em;
 }

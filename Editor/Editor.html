@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="EditorStyle.css" />
+    <script defer type="module" src="EditorLogic.js" defer></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/fabric@latest/dist/index.min.js"></script>
+    <script type="module" src="../HelperFn//Helper.js"></script>
+  </head>
+  <body>
+    <canvas width="800" height="600" id="MyCanvas"></canvas>
+
+    <div id="ControlsDiv">
+      <div id="TrashDiv"></div>
+      <div id="WarningDisplay"></div>
+    </div>
+    <div id="ButtonContainer">
+      <label for="" class="Color">Цвят на текста: </label>
+      <select id="TextColorSelector">
+        <option value="black">Черен</option>
+        <option value="gold">Златен</option>
+        <option value="white">Бял</option>
+      </select>
+      <button style="display: flex" id="AddTextButton" class="CustomButton">
+        Добави Текст
+      </button>
+      <label for="AddPicButton" class="CustomButton" id="AddPicLabel"
+        >Добави Снимка</label
+      >
+      <input
+        type="file"
+        id="AddPicButton"
+        style="display: none"
+        accept="image/png, image/jpeg"
+      />
+    </div>
+    <!-- <div id="FormContainer">
+      <div id="InfoContainer">
+        <label>Име и фамилия: </label>
+        <input id="NameInput" type="text" class="UserInput" />
+        <label>Телефон за връзка: </label>
+        <input id="PhoneInput" type="number" pattern="\d+" class="UserInput" />
+      </div>
+      <textarea
+        class="UserInput"
+        id="InfoInput"
+        rows="5"
+        cols="30"
+        placeholder="Допълнителна информация..."
+      ></textarea>
+
+    </div> -->
+    <button id="SendButton" class="CustomButton">Изтегли</button>
+  </body>
+</html>

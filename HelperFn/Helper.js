@@ -68,9 +68,10 @@ export function RenderGravestone(SourcePic) {
     ParentElement
   );
   NewElement.style.backgroundImage = `url("${SourcePic}")`;
+  NewElement.style.backgroundPosition = "center";
   NewElement.style.backgroundSize = "cover";
-  NewElement.style.minWidth = "100px";
-  NewElement.style.minHeight = "100px";
+  NewElement.style.minWidth = "10em";
+  NewElement.style.minHeight = "25em";
   let PriceInfo = CreateElementFn(
     "div",
     `${PicName}Price`,
@@ -79,4 +80,34 @@ export function RenderGravestone(SourcePic) {
     ParentElement,
     "black"
   );
+}
+
+export function AddText(MyText, Canvas, Color) {
+  let NewText = new fabric.IText(MyText, {
+    fill: Color,
+  });
+  let CanvWidth = Canvas.width / 2;
+  let CanvHeight = Canvas.height / 2;
+  NewText.set({
+    left: CanvWidth - Math.round(NewText.width / 2),
+    top: CanvHeight / 2 - Math.round(NewText.height / 2),
+    borderColor: "black",
+    borderScaleFactor: 3, // strokeWidth: 120,
+    cornerColor: "red",
+    cornerSize: 12,
+  });
+  Canvas.add(NewText);
+  Canvas.setActiveObject(NewText);
+  NewText.enterEditing();
+}
+
+export function DrawBackground(ImgSrc, Canvas) {
+  console.log("Drawing...");
+  let NNImage = fabric.Image.fromURL(ImgSrc).then((img) => {
+    Canvas.setWidth(img.width);
+    Canvas.setHeight(img.height);
+    img.canvas = Canvas;
+    Canvas.backgroundImage = img;
+    Canvas.renderAll();
+  });
 }

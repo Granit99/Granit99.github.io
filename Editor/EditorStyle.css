@@ -1,0 +1,256 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Model {
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* display: none; */
+  width: 240px; /* Set the desired width */
+  height: 150px; /* Set the desired height */
+
+  z-index: 10;
+  /* padding: 10px; */
+  margin: 10px;
+}
+#ModelContainer {
+  /* padding: 20px; */
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+}
+#Model1 {
+  background-image: url("Model1.jpg");
+}
+#Model2 {
+  background-image: url("Model2.png");
+}
+.upper-canvas {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.canvas-container {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  /* padding: 20px; */
+}
+
+.Button {
+  user-select: none;
+}
+#AddPicLabel {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #ffffff;
+  text-align: center;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+#AddPicLabel:hover {
+  background-color: #0056b3;
+}
+button {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+#ButtonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.CustomButton {
+  margin: 10px;
+}
+
+label {
+  color: aliceblue;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.UserInput {
+  background-color: rgb(93, 93, 93);
+  color: rgb(255, 255, 255);
+}
+.UserInput::placeholder {
+  color: rgb(255, 255, 255);
+}
+#TrashDiv {
+  width: 70px;
+  height: 70px;
+  margin: 5px;
+  opacity: 0.5;
+  background-image: url("trash1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#InfoContainer {
+  margin: 15px;
+  transform: scale();
+}
+#ControlsDiv {
+  min-width: 100px;
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+}
+#MyCanvas {
+  border: 2px solid white;
+}
+#TextColorSelector {
+  margin: 1em;
+  width: 5.5em;
+  height: 2em;
+}
+.Color {
+  user-select: none;
+}
