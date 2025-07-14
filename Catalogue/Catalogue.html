@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script type="module" defer src="CatalogueLogic.js"></script>
+    <script type="module" src="../Header.js"></script>
+    <link rel="stylesheet" href="CatalogueStyle.css" />
+  </head>
+  <body>
+    <div id="MainDisplay">
+      <div id="SortMenu">
+        <div>Сортирай по:</div>
+        <div id="SortPriceButton">Цена ⌃</div>
+      </div>
+      <div id="MainContainer">
+        <div id="FilterMenu">
+          <div id="Materials">
+            <div class="FilterHeaders">Видове Материал</div>
+            <div id="MatsContainer" class="Mats">
+              <div class="MatsGroup">
+                <input
+                  id="GraniteCheckbox"
+                  class="MatsCheckbox"
+                  type="checkbox"
+                />
+                <label>Гранит</label>
+              </div>
+              <div class="MatsGroup">
+                <input
+                  id="MarbleCheckbox"
+                  class="MatsCheckbox"
+                  type="checkbox"
+                />
+                <label>Мрамор</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="ContentContainer"></div>
+      </div>
+    </div>
+  </body>
+</html>
