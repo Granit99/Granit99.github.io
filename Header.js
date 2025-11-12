@@ -4,11 +4,11 @@ import { CreateElementFn } from "./HelperFn/Helper.js";
 
 let HeaderMenu = ["Начало", "Каталог", "Услуги", "Галерия", "Контакти"];
 let HeaderHrefs = [
-  "http://127.0.0.1:5500/index.html",
-  "http://127.0.0.1:5500/Catalogue/Catalogue.html",
-  "http://127.0.0.1:5500/Services/services.html",
-  "http://127.0.0.1:5500/Gallery/gallery.html",
-  "http://127.0.0.1:5500/Contact/contact.html",
+  "https://granit99.github.io/index.html",
+  "https://granit99.github.io/Catalogue/Catalogue.html",
+  "https://granit99.github.io/Services/services.html",
+  "https://granit99.github.io/Gallery/gallery.html",
+  "https://granit99.github.io/Contact/contact.html",
 ];
 export let Header = CreateElementFn("div", "Header", [], "", document.body);
 Header.style.display = "flex";
