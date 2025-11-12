@@ -89,3 +89,17 @@ ContentContainer.addEventListener("click", function (e) {
     window.location.href = "http://127.0.0.1:5500/Editor/Editor.html";
   }
 });
+// ContentContainer.addEventListener("mouseover", function (e) {
+//   if (e.target.classList.contains("Pic")) {
+//     console.log("ETarget: ", e.target);
+//     // e.target.style.opacity = 0.5;
+//     e.target.style.transform = "scale(0.9)";
+//   }
+// });
+// ContentContainer.addEventListener("mouseout", function (e) {
+//   if (e.target.classList.contains("Pic")) {
+//     console.log("ETarget: ", e.target);
+//     // e.target.style.opacity = 0.5;
+//     e.target.style.transform = "scale(1)";
+//   }
+// });

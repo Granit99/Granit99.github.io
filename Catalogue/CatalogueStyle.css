@@ -177,3 +177,15 @@ html {
   width: 100vw;
   margin: 3em;
 }
+.Pic:hover {
+  transform: scale(0.95);
+}
+.Pic {
+  transition: transform 150ms ease-in-out;
+}
+#PriceFilter {
+  display: flex;
+}
+.InputNumber {
+  width: 4em;
+}
