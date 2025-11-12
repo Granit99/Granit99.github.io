@@ -86,7 +86,7 @@ ContentContainer.addEventListener("click", function (e) {
     ImgName = ImgName.replace("url", "");
     console.log(ImgName);
     localStorage.setItem("Picture", `${ImgName}`);
-    window.location.href = "http://127.0.0.1:5500/Editor/Editor.html";
+    window.location.href = "https://granit99.github.io/Editor/Editor.html";
   }
 });
 // ContentContainer.addEventListener("mouseover", function (e) {
